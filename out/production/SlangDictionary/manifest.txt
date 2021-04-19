@@ -1,7 +1,0 @@
-Main-Class: slang.Main
-
-
-
-
-
-
