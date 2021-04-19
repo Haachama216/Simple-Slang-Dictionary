@@ -125,7 +125,7 @@ public class SlangDictionary {
         if (input.length() > 0)
             meaning = input;
         AddSlang(new Slang(slang,meaning));
-        System.out.println("the slang was modified");
+        System.out.println("The slang was modified");
     }
     public void Reset() {
         SlangList.clear();
