@@ -66,12 +66,12 @@ public class SlangDictionary {
     }
     public void SearchSlang(String slang) {
         String meaning = SlangList.get(slang);
+        AddHistory(slang);
         if (!SlangList.containsKey(slang)) {
             System.out.println("Cannot find this slang in dictionary");
             return;
         }
         System.out.println(slang + ": " + meaning.replace("|", " or"));
-        AddHistory(slang);
     }
     public void SearchByKeyword(String keyword) {
         ArrayList<Slang> list = KeywordList.get(keyword.toLowerCase());
